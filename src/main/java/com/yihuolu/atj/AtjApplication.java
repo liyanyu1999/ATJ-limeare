@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @MapperScan("com.yihuolu.atj.mapper")
 public class AtjApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(AtjApplication.class, args);
 	}
