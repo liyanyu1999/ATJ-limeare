@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yihuolu.atj.mapper.DiagnosisDetailMapper">
+
+    <resultMap id="BaseResultMap" type="com.yihuolu.atj.entity.dataobject.DiagnosisDetail">
+            <id property="diagnosisDetailId" column="diagnosis_detail_id" jdbcType="INTEGER"/>
+            <id property="diagnosisId" column="diagnosis_id" jdbcType="INTEGER"/>
+            <id property="questionId" column="question_id" jdbcType="INTEGER"/>
+            <id property="userId" column="user_id" jdbcType="INTEGER"/>
+            <result property="answerResult" column="answer_result" jdbcType="TINYINT"/>
+            <result property="diagnosisResult" column="diagnosis_result" jdbcType="TINYINT"/>
+            <result property="isGuess" column="is_guess" jdbcType="TINYINT"/>
+            <result property="isCareless" column="is_careless" jdbcType="TINYINT"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="TINYINT"/>
+            <result property="version" column="version" jdbcType="INTEGER"/>
+            <result property="createdTime" column="created_time" jdbcType="TIMESTAMP"/>
+            <result property="updatedTime" column="updated_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        diagnosis_detail_id,diagnosis_id,question_id,
+        user_id,answer_result,diagnosis_result,
+        is_guess,is_careless,is_deleted,
+        version,created_time,updated_time
+    </sql>
+</mapper>

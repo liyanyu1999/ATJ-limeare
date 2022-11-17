@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yihuolu.atj.mapper.QuestionMapper">
+
+    <resultMap id="BaseResultMap" type="com.yihuolu.atj.entity.dataobject.Question">
+            <id property="questionId" column="question_id" jdbcType="INTEGER"/>
+            <id property="chapterId" column="chapter_id" jdbcType="INTEGER"/>
+            <result property="questionContent" column="question_content" jdbcType="VARCHAR"/>
+            <result property="rightAnswer" column="right_answer" jdbcType="INTEGER"/>
+            <result property="options" column="options" jdbcType="VARCHAR"/>
+            <result property="knowledgeList" column="knowledge_list" jdbcType="VARCHAR"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="TINYINT"/>
+            <result property="version" column="version" jdbcType="INTEGER"/>
+            <result property="createdTime" column="created_time" jdbcType="TIMESTAMP"/>
+            <result property="updatedTime" column="updated_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        question_id,chapter_id,question_content,
+        right_answer,options,knowledge_list,
+        is_deleted,version,created_time,
+        updated_time
+    </sql>
+</mapper>

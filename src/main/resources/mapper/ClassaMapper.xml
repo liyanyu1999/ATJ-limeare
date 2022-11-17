@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yihuolu.atj.mapper.ClassaMapper">
+
+    <resultMap id="BaseResultMap" type="com.yihuolu.atj.entity.dataobject.Classa">
+            <id property="classId" column="class_id" jdbcType="INTEGER"/>
+            <result property="className" column="class_name" jdbcType="VARCHAR"/>
+            <result property="managerId" column="manager_id" jdbcType="INTEGER"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="TINYINT"/>
+            <result property="version" column="version" jdbcType="INTEGER"/>
+            <result property="createdTime" column="created_time" jdbcType="TIMESTAMP"/>
+            <result property="updatedTime" column="updated_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        class_id,class_name,manager_id,
+        is_deleted,version,created_time,
+        updated_time
+    </sql>
+</mapper>

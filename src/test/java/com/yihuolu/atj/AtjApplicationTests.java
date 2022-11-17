@@ -8,6 +8,7 @@ class AtjApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }
