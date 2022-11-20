@@ -11,7 +11,8 @@ class UserTest {
     @Test
     public void testAutoFIll() {
         User user = new User();
-        user.setUserName("test");
+        user.setUserName("test2");
         user.insert();
+        System.out.println(user);
     }
 }
